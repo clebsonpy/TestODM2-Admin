@@ -1,0 +1,20 @@
+django-admin-shortcuts
+django-ajax-selects
+django-apptemplates
+django-daterange-filter
+django-import-export
+django-jquery
+# django-kronos
+django==2.0.1
+# Pinned to 0.2.7 to preserve page style.
+djangocms-admin-style==0.2.7
+psycopg2
+requests
+django-recaptcha
+# django-redis
+pyyaml
+xlrd
+django-redis
+django-fixture-magic
+hs_restclient
+social-auth-app-django

@@ -1,0 +1,269 @@
+/* CUSTOM STYLE FOR MAP */
+.leaflet-google-layer {
+    z-index: 0;
+}
+.leaflet-map-pane {
+    z-index: 100;
+}
+.awesome-marker {
+            background-repeat: no-repeat !important;
+            height: 46px !important;
+            width: 35px !important;
+			
+}
+
+.awesome-marker-labeled {
+    margin-top: -40px !important;
+    margin-left: -19px !important;
+}
+.legend {
+    line-height: 18px;
+    color: #555;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -1px 3px 10px -1px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+}
+/*.datasets-listing{
+    color: #555;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px 3px 10px -1px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+    padding:20px;
+}*/
+#legend{
+    padding:20px;
+}
+.legend-icon {
+    background-image: url(../leaflet-awesome-marker/img/markers-soft.png);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 46px;
+    text-align: center;
+    float: left;
+}
+.legend-icon > i {
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+.legend-item {
+    clear: both;
+}
+.legend-text {
+    float: left;
+    padding-top: 10px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+}
+
+.panel-header {
+    background-color: #474C51;
+    color: #ffffff;
+    padding: 10px 0 10px 20px;
+}
+
+.panel-header h3 {
+    font-size: 20px;
+    color: #ffffff;
+}
+.panel-header p, .panel-header p > span{
+    font-size: 15px;
+}
+
+#content {
+    padding: 0;
+    height: 81.7%;
+}
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.map-panel {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#webmap {
+    width: 100%;
+    height: 95%;
+    float: left;
+}
+
+#mapheader {
+    height: 5%;
+    width: 100%;
+}
+
+#latlng {
+
+}
+#map-container {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.sensor-dashboard-width {
+	    width: 40%;
+		border-color: #f1f1f1;
+		word-wrap: break-word;
+		white-space: normal !important;
+}
+
+table.sensor-dashboard   {
+    vertical-align: baseline;
+	border-color: #f1f1f1;
+	
+}
+tr.sensor-dashboard   {
+    vertical-align: baseline;
+	white-space: normal !important;
+}
+tr.sensor-dashboard:nth-child(even){background-color: #f2f2f2}
+td.sensor-dashboard   {
+    vertical-align: baseline;
+	border-bottom: 1px solid #ddd;
+	white-space: normal !important;
+	color: #444;
+}
+.loadinggif {
+    background: url('http://www.hsi.com.hk/HSI-Net/pages/images/en/share/ajax-loader.gif') no-repeat right center;
+}
+th.sensor-dashboard   {
+    vertical-align: baseline;
+	color: #444;
+	border-bottom: 1px solid #ddd;
+}
+.sensor-dashboard-header   {
+    
+	color: #444;
+	background-color: #fff;
+	white-space: normal !important;
+}
+.container .content {
+    display: none;
+    padding : 5px;
+}
+
+td.title {
+    font-weight: bold;
+}
+
+
+select {
+        width: 85%;
+        overflow: hidden;
+        white-space: pre;
+        text-overflow: ellipsis;
+}
+option {
+    border: solid 1px #DDDDDD;
+}
+
+#close-filter, #minimize-toggle {
+    float: right;
+    padding-left: 10px;
+}
+
+.legend-container #dataset-filter {
+    background-color: rgba(255, 255, 255, 1.0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.legend-container.leaflet-control {
+    z-index: 9999999;
+}
+
+.legend-collapsed #dataset-filter {
+  display: none;
+}
+
+#dataset-filter {
+    padding: 20px;
+}
+
+/* Main blocks */
+#header {
+    height: 5%;
+}
+
+.admin_shortcuts {
+    height: 11%;
+}
+
+.admin_shortcuts .shortcuts {
+    height: 100%;
+}
+
+#footer {
+    padding: 0;
+}
+
+
+/* Accordion */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Add icon to external links */
+a[target="_blank"]:after {
+    font-family: 'FontAwesome';
+    content: " \f08e";
+}
