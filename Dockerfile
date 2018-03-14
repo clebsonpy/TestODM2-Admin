@@ -18,15 +18,13 @@ RUN apt-get install git
 
 EXPOSE 8000
 
-RUN git clone https://github.com/clebsonpy/TestODM2-Admin.git
+COPY . /
 
-RUN cd TestODM2-Admin && ls
-
-RUN cd TestODM2-Admin && latest=$(git describe --tags) && git checkout ${latest}
-
-WORKDIR /TestODM2-Admin
+WORKDIR /
 
 VOLUME templatesAndSettings/settings/
+
+RUN ls
 
 RUN conda create --yes -n odm2adminenv -c conda-forge python=2.7 pytz gdal --file requirements.txt
 
